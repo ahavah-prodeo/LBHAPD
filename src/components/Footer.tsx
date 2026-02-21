@@ -57,7 +57,7 @@ export default function Footer() {
                                 <img src="/logo.webp" alt="Logo Yayasan Ahavah" className="w-full h-full object-contain" />
                             </div>
                             <div>
-                                <span className="text-base font-bold text-white block leading-tight">Yayasan Ahavah Delta Abadi</span>
+                                <span className="text-base font-bold text-white whitespace-nowrap leading-tight">Yayasan Ahavah Delta Abadi <br /> LBH Ahavah Pro Deo</span>
                                 <p className="text-[8px] text-gray-400 mt-0.5 tracking-tighter uppercase font-medium">
                                     SK Kemenkumham AHU-0015730.AH.01.04.Tahun 2024
                                 </p>

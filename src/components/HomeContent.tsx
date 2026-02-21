@@ -130,13 +130,18 @@ const statsData = [
 const strukturData = [
     {
         role: "Ketua Umum",
-        name: "Nama Ketua Umum",
+        name: "Denny Febrianus Nafi, S.Th., S.H.",
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2014.49.59.webp",
     },
     {
-        role: "Kepala Divisi Hukum",
-        name: "Nama Kadiv Hukum",
+        role: "Kepala Divisi Litigasi",
+        name: "Radiaman Purba, S.H.",
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2017.06.25.webp",
+    },
+    {
+        role: "Kepala Divisi Non-Litigasi",
+        name: "Rogansiano Tarang",
+        image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2018.44.10.webp",
     },
 ];
 

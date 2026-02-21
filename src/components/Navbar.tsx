@@ -92,7 +92,7 @@ export default function Navbar() {
                             </div>
                             <div>
                                 <span className="text-sm font-bold tracking-tight text-white block leading-tight">
-                                    Yayasan Ahavah Delta Abadi
+                                    Yayasan Ahavah Delta Abadi <br /> LBH Ahavah Pro Deo
                                 </span>
                                 <p className="text-[8px] text-gray-400 mt-0.5 tracking-tighter uppercase font-medium">
                                     SK Kemenkumham AHU-0015730.AH.01.04.Tahun 2024
