@@ -9,8 +9,8 @@ const slides = [
     {
         image:
             "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1920&auto=format&fit=crop",
-        title: "Yayasan Ahavah",
-        subtitle: "delta abadi",
+        title: "LBH Ahavah Pro Deo",
+        subtitle: "Bantuan Hukum Profesional",
         description:
             "Memberikan pendampingan hukum terbaik dengan integritas dan profesionalisme tinggi untuk memperjuangkan keadilan Anda.",
     },
@@ -115,7 +115,7 @@ export default function HeroSlider() {
                             >
                                 <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
                                 <span className="text-gold-400 text-xs font-medium">
-                                    Yayasan Ahavah delta abadi
+                                    LBH Ahavah Pro Deo
                                 </span>
                             </motion.div>
 

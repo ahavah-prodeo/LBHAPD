@@ -12,13 +12,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Yayasan Ahavah delta abadi | Bantuan Hukum Profesional & Terpercaya",
-    template: "%s | Yayasan Ahavah delta abadi",
+    default: "LBH Ahavah Pro Deo | Bantuan Hukum Profesional & Terpercaya",
+    template: "%s | LBH Ahavah Pro Deo",
   },
   description:
-    "Yayasan Ahavah delta abadi menyediakan layanan konsultasi dan pendampingan hukum profesional. Hukum Perdata, Pidana, Keluarga, Bisnis, Sengketa Tanah, dan Bantuan Hukum Gratis.",
+    "LBH Ahavah Pro Deo menyediakan layanan konsultasi dan pendampingan hukum profesional. Hukum Perdata, Pidana, Keluarga, Bisnis, Sengketa Tanah, dan Bantuan Hukum Gratis.",
   keywords: [
-    "Yayasan Ahavah delta abadi",
+    "LBH Ahavah Pro Deo",
     "bantuan hukum",
     "konsultasi hukum",
     "advokat",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     "firma hukum",
     "lawyer indonesia",
   ],
-  authors: [{ name: "Yayasan Ahavah delta abadi" }],
-  creator: "Yayasan Ahavah delta abadi",
+  authors: [{ name: "LBH Ahavah Pro Deo" }],
+  creator: "LBH Ahavah Pro Deo",
   openGraph: {
     type: "website",
     locale: "id_ID",
     url: "https://lbh-hukum.id",
-    siteName: "Yayasan Ahavah delta abadi",
-    title: "Yayasan Ahavah delta abadi | Bantuan Hukum Profesional & Terpercaya",
+    siteName: "LBH Ahavah Pro Deo",
+    title: "LBH Ahavah Pro Deo | Bantuan Hukum Profesional & Terpercaya",
     description:
       "Menyediakan layanan konsultasi dan pendampingan hukum profesional untuk masyarakat.",
   },

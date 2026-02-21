@@ -178,7 +178,7 @@ export default function Footer() {
             <div className="border-t border-navy-800/50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
                     <p className="text-gray-500 text-sm">
-                        © {new Date().getFullYear()} Yayasan Ahavah Delta Abadi. Seluruh
+                        © {new Date().getFullYear()} LBH Ahavah Pro Deo. Seluruh
                         hak dilindungi.
                     </p>
                     <div className="flex items-center gap-6 text-sm text-gray-500">

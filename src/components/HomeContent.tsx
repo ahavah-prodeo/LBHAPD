@@ -129,7 +129,7 @@ const statsData = [
 
 const strukturData = [
     {
-        role: "Ketua Umum",
+        role: "Direktur LBH",
         name: "Denny Febrianus Nafi, S.Th., S.H.",
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2014.49.59.webp",
     },
@@ -242,7 +242,7 @@ export default function HomeContent() {
                                 <span className="text-gradient">Keadilan</span> untuk Semua
                             </h2>
                             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                                Yayasan Ahavah delta abadi (SK Kemenkumham AHU-0015730.AH.01.04.Tahun 2024) adalah institusi hukum terpercaya
+                                LBH Ahavah Pro Deo (SK Kemenkumham AHU-0015730.AH.01.04.Tahun 2024) adalah institusi hukum terpercaya
                                 yang telah berdiri selama lebih dari 15 tahun, berkomitmen
                                 memberikan layanan hukum berkualitas tinggi bagi seluruh lapisan
                                 masyarakat Indonesia.

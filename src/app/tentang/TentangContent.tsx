@@ -44,7 +44,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
     {
         kta: "24263004",
@@ -68,7 +68,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
     {
         kta: "24263007",
@@ -92,7 +92,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
     {
         kta: "25263010",
@@ -116,7 +116,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
     {
         kta: "25263013",
@@ -140,7 +140,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
     {
         kta: "26263016",
@@ -164,7 +164,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
     {
         kta: "26263019",
@@ -188,7 +188,7 @@ const membersData = [
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
         period: "2023 - 2028",
-        status: "Proses Verifikasi",
+        status: "Terdaftar Resmi",
     },
 ];
 const values = [
