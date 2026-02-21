@@ -43,8 +43,8 @@ const membersData = [
         name: "Carolina Sambara",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
     {
         kta: "24263004",
@@ -67,8 +67,8 @@ const membersData = [
         name: "Rogansiano Tarang",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
     {
         kta: "24263007",
@@ -91,8 +91,8 @@ const membersData = [
         name: "Rieky",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
     {
         kta: "25263010",
@@ -115,8 +115,8 @@ const membersData = [
         name: "Andoni Pradella",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
     {
         kta: "25263013",
@@ -139,8 +139,8 @@ const membersData = [
         name: "Novianti",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
     {
         kta: "26263016",
@@ -163,8 +163,8 @@ const membersData = [
         name: "Martini",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
     {
         kta: "26263019",
@@ -187,8 +187,8 @@ const membersData = [
         name: "Albein Kowaas",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Anggota Utama",
-        period: "2023 - 2028",
-        status: "Terdaftar Resmi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
     },
 ];
 const values = [
@@ -414,7 +414,7 @@ export default function TentangContent() {
                         </form>
                     </div>
 
-                    <div className="mt-12 h-[320px]"> {/* Fixed height to avoid jumps */}
+                    <div className="mt-12 min-h-[300px] h-auto"> {/* Responsive height */}
                         <AnimatePresence mode="wait">
                             {foundMember ? (
                                 <motion.div
@@ -422,16 +422,16 @@ export default function TentangContent() {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     exit={{ opacity: 0, scale: 0.95 }}
-                                    className="glass rounded-3xl p-8 border border-gold-500/20 shadow-2xl relative overflow-hidden"
+                                    className="glass rounded-3xl p-6 md:p-8 border border-gold-500/20 shadow-2xl relative overflow-hidden"
                                 >
-                                    <div className="absolute top-0 right-0 p-8">
-                                        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold uppercase tracking-wider">
+                                    <div className="md:absolute md:top-8 md:right-8 mb-6 md:mb-0">
+                                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold uppercase tracking-wider">
                                             <ShieldCheck size={14} />
                                             {foundMember.status}
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                                         <div className="space-y-6">
                                             <div className="flex items-start gap-4">
                                                 <div className="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">
