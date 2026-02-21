@@ -121,11 +121,11 @@ export default function HeroSlider() {
 
                             {/* Title */}
                             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4">
-                                <span className="text-white whitespace-nowrap">
+                                <span className="text-white">
                                     {slides[currentSlide].title}
                                 </span>
                                 <br />
-                                <span className="text-gradient whitespace-nowrap">
+                                <span className="text-gradient">
                                     {slides[currentSlide].subtitle}
                                 </span>
                             </h1>

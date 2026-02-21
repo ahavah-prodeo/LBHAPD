@@ -134,19 +134,9 @@ const strukturData = [
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2014.49.59.webp",
     },
     {
-        role: "Sekretaris",
-        name: "Nama Sekretaris",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
-    },
-    {
-        role: "Bendahara",
-        name: "Nama Bendahara",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop",
-    },
-    {
         role: "Kepala Divisi Hukum",
         name: "Nama Kadiv Hukum",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
+        image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2017.06.25.webp",
     },
 ];
 
@@ -188,7 +178,7 @@ export default function HomeContent() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {statsData.map((stat, i) => (
                             <AnimatedSection key={stat.label} delay={i * 0.1}>
-                                <div className="glass rounded-2xl p-8 text-center hover:border-gold-500/30 transition-all duration-300">
+                                <div className="glass rounded-2xl p-4 sm:p-8 text-center hover:border-gold-500/30 transition-all duration-300">
                                     <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">
                                         {stat.number}
                                     </div>
