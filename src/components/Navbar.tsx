@@ -17,9 +17,9 @@ const navLinks = [
     { href: "/tentang", label: "Tentang Kami" },
     { href: "/layanan", label: "Layanan" },
     { href: "/artikel", label: "Artikel" },
-    { href: "/donasi", label: "Donasi" },
     { href: "/kontak", label: "Kontak" },
-];
+    { href: "/donasi", label: "Donasi" },
+    ];
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
