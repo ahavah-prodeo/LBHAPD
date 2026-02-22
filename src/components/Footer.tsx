@@ -36,7 +36,7 @@ const footerLinks = {
 
 const socialLinks = [
     { href: "#", icon: Facebook, label: "Facebook" },
-    { href: "https://www.instagram.com/ahavah.prodeo/", icon: Instagram, label: "Instagram", target= "_blank" },
+    { href: "https://www.instagram.com/ahavah.prodeo/", icon: Instagram, label: "Instagram", target: "_blank" },
     { href: "#", icon: Twitter, label: "Twitter" },
     { href: "#", icon: Linkedin, label: "LinkedIn" },
 ];
