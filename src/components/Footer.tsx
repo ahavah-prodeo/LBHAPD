@@ -29,6 +29,7 @@ const footerLinks = {
         { href: "/tentang", label: "Tentang Kami" },
         { href: "/tim-advokat", label: "Tim Advokat" },
         { href: "/artikel", label: "Artikel" },
+        { href: "/donasi", label: "Donasi" },
         { href: "/kontak", label: "Kontak" },
     ],
 };
