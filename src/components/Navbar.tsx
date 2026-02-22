@@ -19,7 +19,7 @@ const navLinks = [
     { href: "/artikel", label: "Artikel" },
     { href: "/kontak", label: "Kontak" },
     { href: "/donasi", label: "Donasi" },
-    ];
+];
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -60,10 +60,10 @@ export default function Navbar() {
                         </a>
                         <span>|</span>
                         <a
-                            href="mailto:deltaabadiahavah@gmail.com"
+                            href="mailto:lbhahavah@lbhahavah.org"
                             className="hover:text-gold-400 transition-colors"
                         >
-                            deltaabadiahavah@gmail.com
+                            lbhahavah@lbhahavah.org
                         </a>
                     </div>
                     <div className="text-gray-400">
