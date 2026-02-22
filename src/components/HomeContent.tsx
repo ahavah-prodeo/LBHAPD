@@ -143,6 +143,11 @@ const strukturData = [
         name: "Rogansiano Tarang",
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2018.44.10.webp",
     },
+    {
+        role: "Bendahara",
+        name: "Katharina",
+        image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2018.44.10.webp",
+    },
 ];
 
 const contactCards = [
