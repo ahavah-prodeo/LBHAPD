@@ -29,8 +29,8 @@ const contactInfo = [
     {
         icon: Mail,
         title: "Email",
-        content: "deltaabadiahavah@gmail.com",
-        href: "mailto:deltaabadiahavah@gmail.com",
+        content: "pengaduan@lbhahavah.org",
+        href: "mailto:pengaduan@lbhahavah.org",
     },
     {
         icon: Clock,
@@ -48,13 +48,42 @@ export default function KontakContent() {
         subjek: "",
         pesan: "",
     });
+    const [isSending, setIsSending] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitted(true);
-        setTimeout(() => setIsSubmitted(false), 3000);
-        setFormState({ nama: "", email: "", telepon: "", subjek: "", pesan: "" });
+        setIsSending(true);
+
+        try {
+            const response = await fetch("https://formspree.io/f/xvzbwyvg", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    nama: formState.nama,
+                    email: formState.email,
+                    telepon: formState.telepon,
+                    subjek: formState.subjek,
+                    pesan: formState.pesan,
+                }),
+            });
+
+            if (response.ok) {
+                setIsSubmitted(true);
+                setFormState({ nama: "", email: "", telepon: "", subjek: "", pesan: "" });
+                setTimeout(() => setIsSubmitted(false), 5000);
+            } else {
+                alert("Gagal mengirim pesan. Silakan coba lagi.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Terjadi kesalahan koneksi. Silakan periksa jaringan Anda.");
+        } finally {
+            setIsSending(false);
+        }
     };
 
     return (
@@ -253,12 +282,13 @@ export default function KontakContent() {
 
                                     <motion.button
                                         type="submit"
+                                        disabled={isSending}
                                         whileHover={{ scale: 1.02 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold rounded-xl hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg shadow-gold-500/20"
+                                        className={`w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold rounded-xl hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg shadow-gold-500/20 ${isSending ? 'opacity-70 cursor-not-allowed' : ''}`}
                                     >
                                         <Send size={18} />
-                                        Kirim Pesan
+                                        {isSending ? "Mengirim..." : "Kirim Pesan"}
                                     </motion.button>
                                 </form>
                             </div>

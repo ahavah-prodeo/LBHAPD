@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://lbh-hukum.id",
+    url: "https://lbhahavah.org",
     siteName: "LBH Ahavah Pro Deo",
     title: "LBH Ahavah Pro Deo | Bantuan Hukum Profesional & Terpercaya",
     description:

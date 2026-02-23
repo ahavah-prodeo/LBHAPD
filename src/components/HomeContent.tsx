@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import HeroSlider from "@/components/HeroSlider";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -177,6 +178,45 @@ const contactCards = [
 ];
 
 export default function HomeContent() {
+    const [formState, setFormState] = useState({
+        nama: "",
+        email: "",
+        subjek: "",
+        pesan: "",
+    });
+
+    const [isSending, setIsSending] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSending(true);
+
+        try {
+            const response = await fetch("https://formspree.io/f/xvzbwyvg", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(formState),
+            });
+
+            if (response.ok) {
+                setIsSubmitted(true);
+                setFormState({ nama: "", email: "", subjek: "", pesan: "" });
+                setTimeout(() => setIsSubmitted(false), 5000);
+            } else {
+                alert("Gagal mengirim pesan. Silakan coba lagi.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Terjadi kesalahan koneksi.");
+        } finally {
+            setIsSending(false);
+        }
+    };
+
     return (
         <>
             {/* ═══════ HERO ═══════ */}
@@ -499,12 +539,15 @@ export default function HomeContent() {
                                 <h3 className="text-2xl font-bold text-white mb-2">Kirim Pesan</h3>
                                 <p className="text-gray-400 text-sm mb-8">Silakan isi formulir di bawah ini, tim kami akan segera menghubungi Anda.</p>
 
-                                <form className="space-y-5">
+                                <form onSubmit={handleSubmit} className="space-y-5">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                         <div>
                                             <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Nama Lengkap</label>
                                             <input
                                                 type="text"
+                                                required
+                                                value={formState.nama}
+                                                onChange={(e) => setFormState({ ...formState, nama: e.target.value })}
                                                 placeholder="Nama Anda"
                                                 className="w-full bg-navy-950/50 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 outline-none transition-all"
                                             />
@@ -513,6 +556,9 @@ export default function HomeContent() {
                                             <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Email</label>
                                             <input
                                                 type="email"
+                                                required
+                                                value={formState.email}
+                                                onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                                                 placeholder="email@anda.com"
                                                 className="w-full bg-navy-950/50 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 outline-none transition-all"
                                             />
@@ -520,7 +566,12 @@ export default function HomeContent() {
                                     </div>
                                     <div>
                                         <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Subjek / Bidang Kasus</label>
-                                        <select className="w-full bg-navy-950/50 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 outline-none transition-all appearance-none cursor-pointer">
+                                        <select
+                                            required
+                                            value={formState.subjek}
+                                            onChange={(e) => setFormState({ ...formState, subjek: e.target.value })}
+                                            className="w-full bg-navy-950/50 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 outline-none transition-all appearance-none cursor-pointer"
+                                        >
                                             <option value="">Pilih Bidang Layanan</option>
                                             <option value="perdata">Hukum Perdata</option>
                                             <option value="pidana">Hukum Pidana</option>
@@ -534,16 +585,25 @@ export default function HomeContent() {
                                         <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Pesan Anda</label>
                                         <textarea
                                             rows={4}
+                                            required
+                                            value={formState.pesan}
+                                            onChange={(e) => setFormState({ ...formState, pesan: e.target.value })}
                                             placeholder="Jelaskan kebutuhan hukum Anda..."
                                             className="w-full bg-navy-950/50 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 outline-none transition-all resize-none"
                                         ></textarea>
                                     </div>
+                                    {isSubmitted && (
+                                        <div className="mb-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 text-sm">
+                                            Pesan Anda berhasil terkirim secara otomatis!
+                                        </div>
+                                    )}
                                     <button
                                         type="submit"
-                                        className="w-full group flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold py-4 rounded-xl hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg shadow-gold-500/20"
+                                        disabled={isSending}
+                                        className={`w-full group flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold py-4 rounded-xl hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg shadow-gold-500/20 ${isSending ? 'opacity-70 cursor-not-allowed' : ''}`}
                                     >
                                         <Send size={18} />
-                                        Kirim Sekarang
+                                        {isSending ? "Mengirim..." : "Kirim Sekarang"}
                                     </button>
                                 </form>
                             </div>

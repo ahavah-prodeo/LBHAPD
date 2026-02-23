@@ -18,6 +18,7 @@ import {
     Hash,
     Calendar,
     ShieldCheck,
+    Briefcase
 } from "lucide-react";
 import { useState } from "react";
 
@@ -266,10 +267,7 @@ export default function TentangContent() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-4">Visi Kami</h3>
                                 <p className="text-gray-400 leading-relaxed">
-                                    Menjadi lembaga bantuan hukum terkemuka di Indonesia yang
-                                    diakui atas komitmennya dalam memperjuangkan keadilan,
-                                    melindungi hak asasi manusia, dan memberikan akses keadilan
-                                    bagi seluruh lapisan masyarakat.
+                                    Mewujudkan dunia yang adil, penuh kasih, dan bermartabat bagi setiap manusia tanpa diskriminasi.
                                 </p>
                             </div>
                         </AnimatedSection>
@@ -283,19 +281,23 @@ export default function TentangContent() {
                                 <ul className="space-y-3 text-gray-400">
                                     <li className="flex items-start gap-3">
                                         <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mt-2 shrink-0" />
-                                        Memberikan layanan hukum berkualitas tinggi secara profesional
+                                        Membela hak-hak dasar setiap manusia.
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mt-2 shrink-0" />
-                                        Menyediakan bantuan hukum gratis bagi masyarakat kurang mampu
+                                        Memberikan bantuan kemanusiaan yang cepat dan berkelanjutan.
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mt-2 shrink-0" />
-                                        Meningkatkan kesadaran hukum masyarakat melalui edukasi
+                                        Membangun kesadaran nilai kemanusiaan dan keadilan sosial.
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mt-2 shrink-0" />
-                                        Mendorong reformasi hukum yang berkeadilan
+                                        Mendorong perubahan sistemik melalui advokasi dan kolaborasi.
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mt-2 shrink-0" />
+                                        Menginspirasi generasi muda dalam karya pelayanan.
                                     </li>
                                 </ul>
                             </div>
@@ -469,6 +471,15 @@ export default function TentangContent() {
                                                 <div>
                                                     <p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest mb-1">Periode Keanggotaan</p>
                                                     <p className="text-gray-300 text-sm">{foundMember.period}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-start gap-4">
+                                                <div className="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">
+                                                    <Briefcase size={20} />
+                                                </div>
+                                                <div>
+                                                    <p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest mb-1">Jabatan</p>
+                                                    <p className="text-gray-300 text-sm">{foundMember.role}</p>
                                                 </div>
                                             </div>
                                         </div>

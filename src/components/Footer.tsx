@@ -159,11 +159,11 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="mailto:deltaabadiahavah@gmail.com"
+                                    href="mailto:lbhahavah@lbhahavah.org"
                                     className="flex items-center gap-3 text-gray-400 text-sm hover:text-gold-400 transition-colors"
                                 >
                                     <Mail size={18} className="shrink-0 text-gold-500" />
-                                    deltaabadiahavah@gmail.com
+                                    lbhahavah@lbhahavah.org
                                 </a>
                             </li>
                             <li>
