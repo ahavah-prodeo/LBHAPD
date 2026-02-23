@@ -147,7 +147,7 @@ const strukturData = [
     {
         role: "Bendahara",
         name: "Katharina",
-        image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2018.44.10.webp",
+        image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Katarina.jpeg?updatedAt=1771763443792.jpeg",
     },
 ];
 
