@@ -130,6 +130,11 @@ const statsData = [
 
 const strukturData = [
     {
+        role: "Pembina",
+        name: "Dr. Carolina Sambara, M.Th., M.Pd.K",
+        image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Carolina%20-%20Pembina.jpeg",
+    },
+    {
         role: "Direktur LBH",
         name: "Denny Febrianus Nafi, S.Th., S.H.",
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2014.49.59.webp",
@@ -143,6 +148,11 @@ const strukturData = [
         role: "Kepala Divisi Non-Litigasi",
         name: "Rogansiano Tarang",
         image: "https://ik.imagekit.io/bzq0b2kjq/WhatsApp%20Image%202026-02-21%20at%2018.44.10.webp",
+    },
+    {
+        role: "Kepala Divisi IT & Edukasi",
+        name: "Endi Febrianto, S.Pd",
+        image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Endi%20Febrianto%20icon.jpeg?updatedAt=1771763443539.jpeg",
     },
     {
         role: "Bendahara",
