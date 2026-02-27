@@ -159,6 +159,11 @@ const strukturData = [
         name: "Katharina",
         image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Katarina.jpeg?updatedAt=1771763443792.jpeg",
     },
+     {
+        role: "Humas",
+        name: "Paskalino Sading",
+        image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Lino.png",
+    }
 ];
 
 const contactCards = [
