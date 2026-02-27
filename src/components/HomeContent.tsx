@@ -187,8 +187,8 @@ const contactCards = [
     {
         icon: Mail,
         title: "Email",
-        content: "deltaabadiahavah@gmail.com",
-        href: "mailto:deltaabadiahavah@gmail.com",
+        content: "lbhahavah@lbhahavah.org",
+        href: "mailto:lbhahavah@lbhahavah.org",
     },
     {
         icon: Clock,
