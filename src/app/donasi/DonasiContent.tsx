@@ -40,7 +40,7 @@ export default function DonasiContent() {
                 <div className="relative max-w-7xl mx-auto text-center">
                     <AnimatedSection>
                         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-sm font-medium mb-6">
-                            Bantu Sesama
+                            Demi Keadilan
                         </span>
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
                             Salurkan <span className="text-gradient">Donasi Anda</span>
