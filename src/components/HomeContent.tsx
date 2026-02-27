@@ -122,9 +122,9 @@ const testimoniData = [
 ];
 
 const statsData = [
-    { number: "500+", label: "Kasus Selesai" },
-    { number: "50+", label: "Advokat Profesional" },
-    { number: "15+", label: "Tahun Pengalaman" },
+    { number: "100+", label: "Kasus Selesai" },
+    { number: "20+", label: "Advokat Profesional" },
+    { number: "10+", label: "Tahun Pengalaman" },
     { number: "98%", label: "Klien Puas" },
 ];
 
