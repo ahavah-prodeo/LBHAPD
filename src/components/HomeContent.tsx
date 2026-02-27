@@ -286,7 +286,7 @@ export default function HomeContent() {
                                             <Award className="text-navy-950" size={28} />
                                         </div>
                                         <div>
-                                            <div className="text-2xl font-bold text-white">15+</div>
+                                            <div className="text-2xl font-bold text-white">10+</div>
                                             <div className="text-gray-400 text-sm">
                                                 Tahun Pengalaman
                                             </div>
@@ -307,9 +307,9 @@ export default function HomeContent() {
                                 <span className="text-gradient">Keadilan</span> untuk Semua
                             </h2>
                             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                                LBH Ahavah Pro Deo (SK Kemenkumham AHU-0015730.AH.01.04.Tahun 2024) adalah institusi hukum terpercaya
-                                yang telah berdiri selama lebih dari 15 tahun, berkomitmen
-                                memberikan layanan hukum berkualitas tinggi bagi seluruh lapisan
+                                LBH Ahavah Pro Deo (SK Kemenkumham AHU-0015730.AH.01.04.Tahun 2024) adalah lembaga bantuan hukum terpercaya
+                                dan berpengalaman berkomitmen memberikan layanan hukum
+                                berkualitas bagi seluruh lapisan
                                 masyarakat Indonesia.
                             </p>
                             <p className="text-gray-400 leading-relaxed mb-8">
@@ -388,7 +388,7 @@ export default function HomeContent() {
                         badge="Keunggulan"
                         title="Mengapa Memilih"
                         highlight="Kami?"
-                        description="Kami memahami bahwa memilih bantuan hukum adalah keputusan penting. Berikut alasan mengapa ribuan klien memercayakan kasus mereka kepada kami."
+                        description="Kami memahami bahwa memilih bantuan hukum adalah keputusan penting. Berikut alasan mengapa ratusan klien memercayakan kasus mereka kepada kami."
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

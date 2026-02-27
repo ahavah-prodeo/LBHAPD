@@ -8,7 +8,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
     {
         image:
-            "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1920&auto=format&fit=crop",
+            "https://ik.imagekit.io/ahavah2024/LBHAPD/Kantor%20LBH%20Ahavah.png",
         title: "LBH Ahavah Pro Deo",
         subtitle: "Bantuan Hukum Profesional",
         description:
@@ -24,7 +24,7 @@ const slides = [
     },
     {
         image:
-            "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1920&auto=format&fit=crop",
+            "https://ik.imagekit.io/ahavah2024/LBHAPD/themis.jpg",
         title: "Perlindungan Hukum",
         subtitle: "Untuk Semua Kalangan",
         description:
