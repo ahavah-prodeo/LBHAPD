@@ -159,7 +159,12 @@ const strukturData = [
         name: "Katharina",
         image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Katarina.jpeg?updatedAt=1771763443792.jpeg",
     },
-     {
+    {
+        role: "Koordinator Aset",
+        name: "Rieky",
+        image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Rieky%20-%20Aset.jpeg?updatedAt=1771811770252.jpeg",
+    } 
+    {
         role: "Humas",
         name: "Paskalino Sading",
         image: "https://ik.imagekit.io/ahavah2024/LBHAPD/Lino.png",
