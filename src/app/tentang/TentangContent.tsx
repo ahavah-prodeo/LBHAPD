@@ -183,11 +183,19 @@ const membersData = [
         period: "2026 - 2030",
         status: "Terverifikasi",
     },
-    {
+     {
         kta: "26263021",
         name: "Albein Kowaas",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Humas",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
+    },
+    {
+        kta: "26263022",
+        name: "Yonathan Bait",
+        institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
+        role: "Advokat",
         period: "2026 - 2030",
         status: "Terverifikasi",
     },
