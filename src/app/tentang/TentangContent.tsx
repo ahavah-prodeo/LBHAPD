@@ -215,6 +215,14 @@ const membersData = [
         period: "2026 - 2030",
         status: "Terverifikasi",
     },
+    {
+        kta: "26263025",
+        name: "Tampu",
+        institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
+        role: "Humas",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
+    },
     
 ];
 const values = [
