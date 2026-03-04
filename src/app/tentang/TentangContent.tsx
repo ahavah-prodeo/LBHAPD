@@ -199,6 +199,15 @@ const membersData = [
         period: "2026 - 2030",
         status: "Terverifikasi",
     },
+    {
+        kta: "26263023",
+        name: "Pesmin Yikwa",
+        institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
+        role: "Humas",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
+    },
+    
 ];
 const values = [
     {
