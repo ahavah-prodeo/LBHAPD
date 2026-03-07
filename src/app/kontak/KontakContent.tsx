@@ -194,10 +194,10 @@ export default function KontakContent() {
                                         </div>
                                         <div>
                                             <label className="block text-sm text-gray-400 mb-2">
-                                                Email *
+                                                No HP *
                                             </label>
                                             <input
-                                                type="nomor HP"
+                                                type="number"
                                                 required
                                                 value={formState.email}
                                                 onChange={(e) =>
