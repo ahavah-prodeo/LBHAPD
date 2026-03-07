@@ -194,7 +194,7 @@ export default function KontakContent() {
                                         </div>
                                         <div>
                                             <label className="block text-sm text-gray-400 mb-2">
-                                                No HP *
+                                                Email *
                                             </label>
                                             <input
                                                 type="number"
@@ -204,7 +204,7 @@ export default function KontakContent() {
                                                     setFormState({ ...formState, email: e.target.value })
                                                 }
                                                 className="w-full px-4 py-3 rounded-xl bg-navy-800/50 border border-navy-700/50 text-white placeholder-gray-500 focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500/50 transition-all"
-                                                placeholder="08xxx"
+                                                placeholder="email@anda.com"
                                             />
                                         </div>
                                     </div>
