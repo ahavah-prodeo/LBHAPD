@@ -575,11 +575,11 @@ export default function HomeContent() {
                                         <div>
                                             <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Email</label>
                                             <input
-                                                type="email"
+                                                type="nomor HP"
                                                 required
                                                 value={formState.email}
                                                 onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                                                placeholder="email@anda.com"
+                                                placeholder="08xxx"
                                                 className="w-full bg-navy-950/50 border border-navy-800 rounded-xl px-4 py-3 text-sm text-white focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 outline-none transition-all"
                                             />
                                         </div>
