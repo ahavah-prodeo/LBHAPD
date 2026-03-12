@@ -223,6 +223,14 @@ const membersData = [
         period: "2026 - 2030",
         status: "Terverifikasi",
     },
+    {
+        kta: "26263026",
+        name: "Awiak Telenggen",
+        institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
+        role: "Anggota Litigasi",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
+    },
     
 ];
 const values = [
@@ -282,8 +290,8 @@ export default function TentangContent() {
                             Berdedikasi untuk <span className="text-gradient">Keadilan</span>
                         </h1>
                         <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-                            Sejak 2009, kami telah menjadi pendamping hukum terpercaya bagi
-                            ribuan klien di seluruh Indonesia.
+                            Sejak 2015, kami telah menjadi pendamping hukum terpercaya bagi
+                            ratsuan klien di seluruh Indonesia.
                         </p>
                     </AnimatedSection>
                 </div>
