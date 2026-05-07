@@ -230,13 +230,15 @@ const membersData = [
         role: "Anggota Litigasi",
         period: "2026 - 2030",
         status: "Terverifikasi",
-        
-    },kta: "26263027",
+    },    
+    {
+        kta: "26263027",
         name: "Zuhri Wahyu Hernawan",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
         role: "Humas",
         period: "2026 - 2030",
         status: "Terverifikasi",
+    },
 ];
 const values = [
     {
