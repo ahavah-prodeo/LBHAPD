@@ -256,6 +256,14 @@ const membersData = [
         status: "Terverifikasi",
     }, 
     {
+        kta: "26263031",
+        name: "Adellia Norvyani",
+        institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
+        role: "Bendahara",
+        period: "2026 - 2030",
+        status: "Terverifikasi",
+    },
+    {
         kta: "26263027",
         name: "Zuhri Wahyu Hernawan",
         institution: "Lembaga Bantuan Hukum AHAVAH PRO DEO",
